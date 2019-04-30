@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Experiment Tutorial</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="../static/css/mystyle.css">
+		
+	</head>
+
+	<body>
+
+		<nav id="top-nav" class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">?</a>
+				<div class="dropdown-menu" aria-labelledby="dropdown01">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<a class="dropdown-item" href="#">Something else here</a>
+				</div>
+			</div>
+		</nav>
+
+		<main role="main" class="container">
+
+			<div id = "welcome" class="row task-container" style="display:none">
+				<div class="col">
+					<h1 class="text-center">Welcome to the test experiment</h1>
+					<hr>
+					<p>This is a brief description of the study, with <a href="#" target="_blank">a link</a> to more detailed information, probably in a downloadable pdf.</p>
+					<p>Clicking the "Agree" box below indicates that:</p>
+						<ul>
+							<li><p>First condition of consent</p></li>
+							<li><p>Second condition of consent</p></li>
+							<li><p>...</p></li>
+							<li><p><em>N</em>th condition of consent</p></li>
+						</ul>
+					<hr>
+					<div class="text-center">
+						<p>
+							<label class="radio-inline">
+								<input type=radio id="yesConsent" name="consent">&nbsp Agree
+							</label> &nbsp &nbsp &nbsp
+							<label class="radio-inline">
+								<input type=radio id="noConsent" name="consent">&nbsp Disgree
+							</label>
+						</p>
+					</div>
+					<div class="center-block text-center">
+						<button id="acceptConsent" class="btn btn-primary btn-lg">Start</button>
+					</div>
+				</div>
+			</div>
+
+		</main>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+	<script type="text/javascript" src="../static/js/task.js"></script>
+  </body>
+</html>

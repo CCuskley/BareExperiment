@@ -1,0 +1,11 @@
+body {
+  padding-top: 2rem;
+}
+
+#welcome {
+  padding: 3rem 1.5rem;
+}
+
+.dropdown-item {
+	color:blue;
+}
